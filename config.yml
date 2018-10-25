@@ -1,0 +1,20 @@
+homebrew_installed_packages:
+  - git
+  - vim
+  - tmux
+  - zsh
+  - wget
+  - readline
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - sequel-pro
+  - slack
