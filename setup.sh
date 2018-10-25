@@ -17,3 +17,13 @@ cd $INSTALL_PATH
 
 ansible-galaxy install -r requirements.yml
 ansible-playbook -v -i inventory-localhost -K main.yml
+
+sudo chsh -s /bin/zsh $USER
+
+bash <(curl -L https://raw.github.com/twolights/meowrc/master/setup.sh)
+
+# TODO
+# Terminal settings
+# Scroll direction
+# Install Droid Sans
+# Install VPN

@@ -1,10 +1,12 @@
 homebrew_installed_packages:
   - git
-  - vim
-  - tmux
-  - zsh
-  - wget
+  - kubernetes-cli
   - readline
+  - terraform
+  - tmux
+  - vim
+  - wget
+  - zsh
 
 homebrew_taps:
   - homebrew/core
@@ -16,5 +18,14 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - google-cloud-sdk
+  - intellij-idea
   - sequel-pro
   - slack
+
+mas_installed_apps:
+  - { id: 497799835, name: "Xcode" }
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 539883307, name: "Line" }
+  - { id: 836500024, name: "WeChat" }
+  - { id: 732710998, name: "Enpass" }
