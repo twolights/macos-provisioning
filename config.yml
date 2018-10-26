@@ -22,6 +22,8 @@ homebrew_cask_apps:
   - intellij-idea
   - sequel-pro
   - slack
+  - spotify
+  - xld
 
 mas_installed_apps:
   - { id: 497799835, name: "Xcode" }
