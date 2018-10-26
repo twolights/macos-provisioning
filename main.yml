@@ -7,3 +7,10 @@
   roles:
     - role: geerlingguy.homebrew
     - role: geerlingguy.mas
+
+- osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.swipescrolldirection
+    type: int
+    value: 1
+    state: present
