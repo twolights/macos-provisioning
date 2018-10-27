@@ -8,51 +8,57 @@
     - role: geerlingguy.homebrew
     - role: geerlingguy.mas
 
-- osx_defaults:
-    domain: NSGlobalDomain
-    key: com.apple.swipescrolldirection
-    type: int
-    value: 1
-    state: present
+  tasks:
+    - name: Adjust scroll direction
+      osx_defaults:
+        domain: NSGlobalDomain
+        key: com.apple.swipescrolldirection
+        type: int
+        value: 1
+        state: present
 
-- name: Remove all crap from Dock
-  shell: dockutil --remove '{{ item }}'
-  ignore_errors: true
-  with_items: dockitems_to_remove
+    - name: Remove unnecessary items from Dock
+      shell: dockutil --remove '{{ item }}'
+      ignore_errors: true
+      with_items: dockitems_to_remove
 
-- name: Check if items in dock exist
-  shell: dockutil --find '{{ item.name }}' || dockutil --add '{{ item.path }}'
-  with_items: dockitems_to_persist
+    - name: Check if items in Dock exist
+      shell: dockutil --find '{{ item.name }}' || dockutil --add '{{ item.path }}'
+      with_items: dockitems_to_persist
 
-- name: Fix order
-  shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
-  with_items: dockitems_to_persist
+    - name: Change Dock items order
+      shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
+      with_items: dockitems_to_persist
 
-- osx_defaults:
-    domain: com.apple.dock
-    key: magnification
-    type: int
-    value: 1
-    state: present
+    - name: Change Dock settings(magnification)
+      osx_defaults:
+        domain: com.apple.dock
+        key: magnification
+        type: int
+        value: 1
+        state: present
 
-- osx_defaults:
-    domain: com.apple.dock
-    key: autohide
-    type: int
-    value: 1
-    state: present
+    - name: Change Dock settings(auto hide)
+      osx_defaults:
+        domain: com.apple.dock
+        key: autohide
+        type: int
+        value: 1
+        state: present
 
-- osx_defaults:
-    domain: com.apple.dock
-    key: orientation
-    type: string
-    value: bottom
-    state: present
+    - name: Change Dock settings(orientation)
+      osx_defaults:
+        domain: com.apple.dock
+        key: orientation
+        type: string
+        value: bottom
+        state: present
 
-- osx_defaults:
-    domain: com.apple.dock
-    key: tilesize
-    type: int
-    value: 51
-    state: present
+    - name: Change Dock settings(tile size)
+      osx_defaults:
+        domain: com.apple.dock
+        key: tilesize
+        type: int
+        value: 51
+        state: present
 
