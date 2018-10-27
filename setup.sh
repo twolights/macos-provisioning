@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_PATH=~/test.src
+SOURCE_PATH=~/test/src
 INSTALL_PATH=$SOURCE_PATH/macos-provisioning
 TEMP_DROID_SANS_PATH=/tmp/droid-sans-mono.zip
 
@@ -34,5 +34,4 @@ cp files/com.apple.Terminal.plist ~/Library/Preferences/
 
 # TODO
 # Install VPN
-# Swipe fingers
 # Secrets
