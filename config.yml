@@ -21,6 +21,7 @@ homebrew_cask_apps:
   - google-chrome
   - google-cloud-sdk
   - intellij-idea
+  - quicksilver
   - sequel-pro
   - slack
   - spotify
