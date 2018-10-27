@@ -30,7 +30,7 @@
       shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
       with_items: dockitems_to_persist
 
-    - name: Change Dock settings(magnification)
+    - name: Change Dock settings (magnification)
       osx_defaults:
         domain: com.apple.dock
         key: magnification
@@ -38,7 +38,7 @@
         value: 1
         state: present
 
-    - name: Change Dock settings(auto hide)
+    - name: Change Dock settings (auto hide)
       osx_defaults:
         domain: com.apple.dock
         key: autohide
@@ -46,7 +46,7 @@
         value: 1
         state: present
 
-    - name: Change Dock settings(orientation)
+    - name: Change Dock settings (orientation)
       osx_defaults:
         domain: com.apple.dock
         key: orientation
@@ -54,7 +54,7 @@
         value: bottom
         state: present
 
-    - name: Change Dock settings(tile size)
+    - name: Change Dock settings (tile size)
       osx_defaults:
         domain: com.apple.dock
         key: tilesize
@@ -62,3 +62,18 @@
         value: 51
         state: present
 
+    - name: Change Trackpad settings (disable three-finger swipe)
+      osx_defaults:
+        domain: com.apple.AppleMultitouchTrackpad
+        key: TrackpadThreeFingerHorizSwipeGesture
+        type: int
+        value: 1
+        state: present
+
+    - name: Change Trackpad settings (disable three-finger swipe)
+      osx_defaults:
+        domain: com.apple.AppleMultitouchTrackpad
+        key: TrackpadThreeFingerVertSwipeGesture
+        type: int
+        value: 1
+        state: present
