@@ -32,6 +32,8 @@ popd
 
 cp files/com.apple.Terminal.plist ~/Library/Preferences/
 
+sudo killall cfprefsd Dock Finder
+
 # TODO
 # Install VPN
 # Secrets
