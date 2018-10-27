@@ -34,5 +34,5 @@ cp files/com.apple.Terminal.plist ~/Library/Preferences/
 
 # TODO
 # Install VPN
-# Dock mode
 # Swipe fingers
+# Secrets

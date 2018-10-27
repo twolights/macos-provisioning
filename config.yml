@@ -1,4 +1,5 @@
 homebrew_installed_packages:
+  - dockutil
   - git
   - kubernetes-cli
   - readline
@@ -31,3 +32,55 @@ mas_installed_apps:
   - { id: 539883307, name: "Line" }
   - { id: 836500024, name: "WeChat" }
   - { id: 732710998, name: "Enpass" }
+
+dockitems_to_remove:
+  - Launchpad
+  - Mail
+  - Safari
+  - Contacts
+  - Notes
+  - Maps
+  - Photos
+  - FaceTime
+  - iBooks
+  - App Store
+  - System Preferences
+  - Calendar
+
+dockitems_to_persist:
+  - name: Reminders
+    path: "/Applications/Reminders.app"
+    pos: 1
+  - name: Sequel Pro
+    path: "/Applications/Sequel Pro.app"
+    pos: 2
+  - name: Terminal
+    path: /Applications/Utilities/Terminal.app
+    pos: 3
+  - name: Firefox
+    path: "/Applications/Firefox.app"
+    pos: 4
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 5
+  - name: iTunes
+    path: /Applications/iTunes.app
+    pos: 6
+  - name: Photos
+    path: /Applications/Photos.app
+    pos: 7
+  - name: Activity Monitor
+    path: "/Applications/Utilities/Activity Monitor.app"
+    pos: 8
+  - name: Slack
+    path: /Applications/Slack.app
+    pos: 9
+  - name: WeChat
+    path: /Applications/WeChat.app
+    pos: 10
+  - name: Messages
+    path: /Applications/Messages.app
+    pos: 11
+  - name: Line
+    path: /Applications/LINE.app
+    pos: 12
