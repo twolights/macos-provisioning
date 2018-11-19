@@ -1,10 +1,13 @@
 homebrew_installed_packages:
+  - ack
   - dockutil
   - git
   - kubernetes-cli
+  - maven
   - readline
   - terraform
   - tmux
+  - tomcat@8
   - vim
   - wget
   - zsh
