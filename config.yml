@@ -4,7 +4,9 @@ homebrew_installed_packages:
   - git
   - kubernetes-cli
   - maven
+  - nmap
   - readline
+  - ripgrep
   - terraform
   - tmux
   - tomcat@8
@@ -28,6 +30,7 @@ homebrew_cask_apps:
   - sequel-pro
   - slack
   - spotify
+  - sublime-text
   - xld
 
 mas_installed_apps:
