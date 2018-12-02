@@ -10,6 +10,7 @@ homebrew_installed_packages:
   - terraform
   - tmux
   - tomcat@8
+  - unrar
   - vim
   - wget
   - zsh
