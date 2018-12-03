@@ -1,6 +1,7 @@
 homebrew_installed_packages:
   - ack
   - dockutil
+  - ffmpeg
   - git
   - kubernetes-cli
   - maven
@@ -13,6 +14,7 @@ homebrew_installed_packages:
   - unrar
   - vim
   - wget
+  - youtube-dl
   - zsh
 
 homebrew_taps:
@@ -65,8 +67,8 @@ dockitems_to_persist:
   - name: Terminal
     path: /Applications/Utilities/Terminal.app
     pos: 3
-  - name: Firefox
-    path: "/Applications/Firefox.app"
+  - name: IntelliJ IDEA
+    path: "/Applications/IntelliJ IDEA.app"
     pos: 4
   - name: Google Chrome
     path: "/Applications/Google Chrome.app"
